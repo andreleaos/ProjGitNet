@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,11 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ContatoBLL.cs" />
+    <Compile Include="DAL\ConnectionManager.cs" />
+    <Compile Include="DAL\ContatoDAL.cs" />
+    <Compile Include="DAL\TSQL_PROC.cs" />
+    <Compile Include="Model\Contato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\TesteContato.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Infrastructure\script-database.txt" />
+    <Content Include="Infrastructure\script-insert.txt" />
+    <Content Include="Infrastructure\script-procs.txt" />
+    <Content Include="Infrastructure\script-tables.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

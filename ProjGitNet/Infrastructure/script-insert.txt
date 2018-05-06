@@ -1,0 +1,9 @@
+﻿
+
+insert into contato (nome, email, fone) values ('Maria','maria@hotmail.com','12 3456-7890')
+insert into contato (nome, email, fone) values ('Joao','joao@outlook.com','34 5678-9012')
+insert into contato (nome, email, fone) values ('Jose','jose@gmail.com','12 3456-0987')
+insert into contato (nome, email, fone) values ('Andre','andre@hotmail.com','23 4567-8910')
+insert into contato (nome, email, fone) values ('Junior','junior@gmail.com','45 6789-0123')
+
+select id, nome, email, fone from contato
